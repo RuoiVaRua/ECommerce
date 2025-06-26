@@ -50,9 +50,21 @@
   >
   > **VITE_DEVELOPING_FRONTEND_PORT**          // Running port in developing
 
-- For ReactJS Admin: (It is not necessary on the production server because the VITE_BASE_URL env variable already exists in the client env section)
+- For ReactJS Admin:
   >
-  > **VITE_BASE_URL**          // Same as API .env
+  > **VITE_FIREBASE_API_KEY**
+  >
+  > **VITE_FIREBASE_AUTH_DOMAIN**
+  >
+  > **VITE_FIREBASE_PROJECT_ID**
+  >
+  > **VITE_FIREBASE_STORAGE_BUCKET**
+  >
+  > **VITE_FIREBASE_MESSAGING_SENDER_ID**
+  >
+  > **VITE_FIREBASE_APP_ID**
+  >
+  > **VITE_BASE_URL**          // Same as API .env. It is not necessary on the production server because the VITE_BASE_URL env variable already exists in the client env section
   >
   > **VITE_DEVELOPING_FRONTEND_PORT**          // Running port in developing  
 
