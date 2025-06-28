@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+body {
+    background-color: white;
+}
+
 @media only screen and (max-width: 700px){
     audio {
         width: 100vw !important;

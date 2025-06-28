@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { addProduct } from "../redux/cartRedux";
 import { publicRequest } from "../requestMethods";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 import './product.css';
 
 const Container = styled.div``;
@@ -30,6 +30,7 @@ const ImgContainer = styled.div`
   flex: 1;
   ${'' /* margin-right: 50px; */}
   ${mobile({ maxWidth: '100%', width: '100%', height: '70vh', margin: '30px 0px'})}
+  ${tablet({ maxWidth: '100%', width: '100%', height: '70vh', margin: '30px 0px'})}
 `;
 
 const Arrow = styled.div`
@@ -62,7 +63,8 @@ const Image = styled.img`
   display: block;
   margin: auto;
   ${'' /* &:hover { transform: scale3d(1.1, 1.1, 1) } */}
-  ${mobile({ maxHeight: '70vh', height: "100%", width: '100% !important'})}
+  ${mobile({ maxHeight: 'calc(70vh - 100px - 10px)', height: "100%", width: '100% !important'})}
+  ${tablet({ maxHeight: 'calc(70vh - 100px - 10px)', height: "100%", width: '100% !important'})}
 `;
 const ImgLen = styled.div`
   display: none;
