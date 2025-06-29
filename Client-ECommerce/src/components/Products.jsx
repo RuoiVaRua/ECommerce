@@ -49,7 +49,7 @@ const Products = ({filters}) => {
 
     return (
         <Container>
-            {products.slice((page-1)*rowPerPage, page * rowPerPage).map((item) => (
+            {Array.isArray(products) && products.slice((page-1)*rowPerPage, page * rowPerPage).map((item) => (
                 <Product key={item._id} item={item}/>
             ))}
             <PaginationContainer>
