@@ -30,6 +30,8 @@
   > 
   > **MY_MAIL_PASSWORD**  // google account application password for MY_MAIL
   > 
+  > **HOST**              // 0.0.0.0 for production in personal's server or unset (127.0.0.1, localhost) for developing
+  > 
   > **BASE_URL**          // in my case: https://figures-shop.up.railway.app for production and http://localhost:5000 for developing
   > 
   > **DEVELOPING_FRONTEND_URL**          // The navigation page returns from MoMo (only used in developing) - http://localhost:3000 (Front-end Shopping page)

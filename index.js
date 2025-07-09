@@ -14,6 +14,7 @@ const checkoutRoute = require("./routes/checkout");// payment route
 const mail = require("./routes/mail");// mail route
 const cors = require("cors");
 // const cookieSession = require('cookie-session');
+const host = process.env.HOST; // Lấy host từ biến môi trường
 
 // prepare for mongoose version 7
 mongoose.set('strictQuery', false);
@@ -56,6 +57,12 @@ if(process.env.NODE_ENV === 'production'){
     });
 }
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log(`Backend server is running on port ${process.env.PORT || 5000}`);
-});
+if (host) {
+    app.listen(process.env.PORT || 5000, host, () => {
+        console.log(`Backend server is running on port ${process.env.PORT || 5000}, host: ${host}`);
+    });
+} else {
+    app.listen(process.env.PORT || 5000, () => {
+        console.log(`Backend server is running on port ${process.env.PORT || 5000}`);
+    });
+}
