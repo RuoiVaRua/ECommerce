@@ -5,6 +5,10 @@
     }
 } */
 
+[class*="makeStyles-button"].right {
+    right: 0;
+}
+
 @media only screen and (max-width: 1000px) {
     [class*="makeStyles-root"] {
         min-height: 70dvh;
